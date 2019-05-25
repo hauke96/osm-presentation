@@ -127,9 +127,11 @@
 
 	\section{The data}
 	
-	\subsection{Node}
+	\tableofcontents[currentsection]
 	
-	\begin{frame}
+	\subsection{Geometries}
+	
+	\begin{frame}{Node}
 		\begin{itemize}
 			\item single location on map
 		\end{itemize}
@@ -158,9 +160,7 @@
 		{\tiny (1) \url{https://wiki.openstreetmap.org/wiki/File:Red_telephone_box_-_geograph.org.uk_-_919348.jpg}, 2019-05-25}
 	\end{frame}
 		
-	\subsection{Way}
-	
-	\begin{frame}
+	\begin{frame}{Way}
 		\begin{itemize}
 			\item line on map
 			\item 2-2000 points per way
@@ -188,9 +188,7 @@
 		{\tiny (1) \url{https://wiki.openstreetmap.org/wiki/File:Meyenburg-L134.jpg}, 2019-05-25}
 	\end{frame}
 	
-	\subsection{Relation}
-	
-	\begin{frame}
+	\begin{frame}{Relation}
 		\begin{itemize}
 			\item combination of ways (e.g. to a bus route)
 		\end{itemize}
@@ -217,9 +215,7 @@
 		\end{center}
 	\end{frame}
 			
-	\subsection{Area}
-	
-	\begin{frame}
+	\begin{frame}{Area}
 		\begin{itemize}
 			\item basically a closed way with special tags
 		\end{itemize}
@@ -246,9 +242,7 @@
 		{\tiny (1) \url{https://commons.wikimedia.org/wiki/File:Stellinger_Feldmark_ESE_01.JPG}, 2019-05-25}
 	\end{frame}
 				
-	\subsection{Multipolygon}
-	
-	\begin{frame}
+	\begin{frame}{Multipolygon}
 		\begin{itemize}
 			\item basically a polygon with polygons inside
 			\item role \texttt{inner} and \texttt{outer}
@@ -273,6 +267,28 @@
 			\end{minipage}
 		\end{center}
 		{\tiny (1) Microsoft\copyright BingTM Maps Platform; (2) Microsoft\copyright BingTM Maps Platform inside JOSM editor}
+	\end{frame}
+
+	\subsection{Tags}
+	
+	\begin{frame}
+		\begin{itemize}
+			\item free tagging system
+			\item unlimited amount of tags
+			\item consider conventions (s. wiki)
+		\end{itemize}
+		\\\hfill\\
+		\begin{tabular}{|l|l|l|}
+			\hline
+			\textbf{format} & \textbf{notation} & \textbf{example} \\
+			\hline
+			normal & \texttt{key=value} & \texttt{highway=service} \\ 
+			\hline 
+			multiple values & \texttt{key=v1;v2} & \texttt{amenity=library;cafe} \\ 
+			\hline 
+			namespace & \texttt{key:namespace=value} & \texttt{addr:housenumber=42} \\ 
+			\hline 
+		\end{tabular}
 	\end{frame}
 
 	\section{Applications}
