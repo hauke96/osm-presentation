@@ -1,2 +1,5 @@
-# osm-presentation
-Basic slides introducting OpenStreetMap and showing how to contribute to OSM
+# ACHTUNG
+
+Dieses Repo ist mittlerweile umgezogen:
+
+https://github.com/hauke96/presentations/tree/main/osm-presentation
